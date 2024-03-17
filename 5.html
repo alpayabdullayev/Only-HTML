@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>
+        Ünvan:
+        <a target="_blank" href="https://maps.app.goo.gl/98GaAGtxrvjnNtsSA"
+          >H.Cavid prospekti 25, Bakı, Azərbaycan AZ 1073 Azərbaycan Texniki
+          Universiteti.</a
+        >
+      </li>
+      <li>Telefon: <a href="tel:994125383383">(+994 12) 538-33-83</a></li>
+      <li>Email: <a href="mailto:aztu@aztu.edu.az">aztu@aztu.edu.az</a></li>
+      <li>
+        Whatsapp:
+        <a target="_blank" href="https://wa.me/994505391305"
+          >(+994 50) 539-13-05</a
+        >
+      </li>
+    </ul>
+    <form action="login.php" method="POST">
+      <p><input name="user" type="text" placeholder="Username" /></p>
+      <p><input name="pass" type="password" placeholder="Password" /></p>
+      <p><input type="submit" value="Log In" /></p>
+    </form>
+    <h2>Application Form</h2>
+    <form>
+      <p>Ad Soyad: <input type="text" /></p>
+      <p>
+        Cins:
+        <label><input name="sex" type="radio" checked="checked" /> Kişi</label>
+        <label><input name="sex" type="radio" /> Qadın</label>
+      </p>
+      <p>Ad günü: <input type="date" /></p>
+      <p>Boy: <input type="number" min="150" max="220" />sm</p>
+      <p>Göz rəngi: <input type="color" /></p>
+      <p>
+        Doğum yeri:
+        <select>
+          <option>Armenia</option>
+          <option selected="selected">Azerbaijan</option>
+          <option>Georgia</option>
+          <option>Iran</option>
+          <option>Russia</option>
+          <option>Turkiye</option>
+          <option>Ukraine</option>
+        </select>
+      </p>
+      <p>
+        Şəhər / Rayon
+        <input list="city" />
+        <datalist id="city">
+          <option>Bakı</option>
+          <option>Gəncə</option>
+          <option>Quba</option>
+          <option>Lənkəran</option>
+          <option>Naxçıvan</option>
+        </datalist>
+      </p>
+      <fieldset>
+        <legend>Qan qrupu:</legend>
+        <table>
+          <tr>
+            <th><label for="a"> A </label></th>
+            <th><label for="b"> B </label></th>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="a" /></td>
+            <td><input type="checkbox" id="b" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <p>Foto: <input type="file" /></p>
+      <p>Hazırki kefin pis gündə<input type="range" />BOMBA !</p>
+      <p>Mesaj: <br /><textarea rows="50" cols="150"></textarea></p>
+      <p>
+        <input type="reset" value="Təmizlə" />
+        <input type="submit" value="Göndər" />
+      </p>
+    </form>
+  </body>
+</html>
